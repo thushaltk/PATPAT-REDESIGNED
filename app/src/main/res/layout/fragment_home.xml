@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/circle1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/home_circular_button"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp" />
+
+        <View
+            android:id="@+id/circle2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/home_circular_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/circle3"
+            app:layout_constraintStart_toEndOf="@+id/circle1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/circle3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/home_circular_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/circle4"
+            app:layout_constraintStart_toEndOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/circle4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/home_circular_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/circle5"
+            app:layout_constraintStart_toEndOf="@+id/circle3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/circle5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_circular_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/circle4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/circle1"
+            app:layout_constraintEnd_toEndOf="@+id/circle1"
+            app:layout_constraintStart_toStartOf="@+id/circle1"
+            app:layout_constraintTop_toTopOf="@+id/circle1"
+            app:srcCompat="@drawable/ic_baseline_directions_car_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/circle2"
+            app:layout_constraintStart_toStartOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="@+id/circle2"
+            app:srcCompat="@drawable/house"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/circle3"
+            app:layout_constraintEnd_toEndOf="@+id/circle3"
+            app:layout_constraintStart_toStartOf="@+id/circle3"
+            app:layout_constraintTop_toTopOf="@+id/circle3"
+            app:srcCompat="@drawable/shop"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/circle4"
+            app:layout_constraintEnd_toEndOf="@+id/circle4"
+            app:layout_constraintStart_toStartOf="@+id/circle4"
+            app:layout_constraintTop_toTopOf="@+id/circle4"
+            app:srcCompat="@drawable/education"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/circle5"
+            app:layout_constraintEnd_toEndOf="@+id/circle5"
+            app:layout_constraintStart_toStartOf="@+id/circle5"
+            app:layout_constraintTop_toTopOf="@+id/circle5"
+            app:layout_constraintVertical_bias="0.48"
+            app:srcCompat="@drawable/leisure"
+            tools:ignore="VectorDrawableCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/top_navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_navigation">
+
+        <View
+            android:id="@+id/rec1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/home_curved_rectangle_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"/>
+
+
+        <View
+            android:id="@+id/rec2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/home_curved_rectangle_button"
+            android:layout_marginRight="5dp" />
+
+        <View
+            android:id="@+id/rec3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/home_curved_rectangle_button"
+            android:layout_marginRight="5dp" />
+
+        <View
+            android:id="@+id/rec4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/home_curved_rectangle_button"
+            android:layout_marginRight="5dp" />
+
+        <View
+            android:id="@+id/rec5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/home_curved_rectangle_button"
+            android:layout_marginRight="5dp" />
+
+        <View
+            android:id="@+id/rec6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/home_curved_rectangle_button"
+            android:layout_marginRight="5dp" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/top_navigation2"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            style="@style/Widget.MaterialComponents.TextView"
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="Search"
+            android:background="@drawable/search_background"
+            android:hint="Search"
+            android:inputType="textFilter"
+            android:paddingLeft="15dp"
+            tools:ignore="LabelFor"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.493"
+            app:srcCompat="@drawable/ic_baseline_search_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search" />
+
+
+
+
+
+
+</RelativeLayout>

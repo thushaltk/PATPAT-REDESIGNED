@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Test Application</string>
+    <string name="welcome">Welcome</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">sign up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="price">LKR 5,222,000</string>
+    <string-array name="titles">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
