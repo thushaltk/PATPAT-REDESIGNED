@@ -10,11 +10,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
 public class CreateAnAccountFragment extends Fragment {
 
     Button ca_btn;
+    private String[] titles;
 
     public CreateAnAccountFragment() {
         // Required empty public constructor
@@ -32,6 +35,13 @@ public class CreateAnAccountFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ca_btn = view.findViewById(R.id.ca_submit);
+
+        this.titles = getResources().getStringArray(R.array.titles);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(requireContext(), R.layout.dropdown_item, titles);
+
+
+        AutoCompleteTextView autoCompleteTextView = getView().findViewById(R.id.autoCompleteTextView_ca);
+        autoCompleteTextView.setAdapter(arrayAdapter );
 
         ca_btn.setOnClickListener(new View.OnClickListener() {
             @Override

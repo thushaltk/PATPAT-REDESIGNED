@@ -133,7 +133,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_marginTop="10dp"
         android:id="@+id/top_navigation2"
         android:layout_width="match_parent"
@@ -144,54 +144,131 @@
             android:id="@+id/rec1"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/home_curved_rectangle_button"
-            android:layout_marginLeft="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <View
             android:id="@+id/rec2"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="4dp"
             android:background="@drawable/home_curved_rectangle_button"
-            android:layout_marginRight="5dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rec1"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/rec3"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="4dp"
             android:background="@drawable/home_curved_rectangle_button"
-            android:layout_marginRight="5dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rec2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <View
             android:id="@+id/rec4"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="4dp"
             android:background="@drawable/home_curved_rectangle_button"
-            android:layout_marginRight="5dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rec3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <View
             android:id="@+id/rec5"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="4dp"
             android:background="@drawable/home_curved_rectangle_button"
-            android:layout_marginRight="5dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rec4"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/rec6"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/home_curved_rectangle_button"
-            android:layout_marginRight="5dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rec5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rec1"
+            app:layout_constraintStart_toStartOf="@+id/rec1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home_car_01" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rec2"
+            app:layout_constraintStart_toStartOf="@+id/rec2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/semi_car" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/rec3"
+            app:layout_constraintStart_toStartOf="@+id/rec3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/van" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rec4"
+            app:layout_constraintStart_toStartOf="@+id/rec4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lorry" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rec5"
+            app:layout_constraintStart_toStartOf="@+id/rec5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.515"
+            app:srcCompat="@drawable/bike" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rec6"
+            app:layout_constraintStart_toStartOf="@+id/rec6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.525"
+            app:srcCompat="@drawable/threewheeler" />
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/search"
