@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/sidebar_vehicle"
+            android:icon="@drawable/ic_vehicle"
+            android:title="Vehicle"/>
+        <item android:id="@+id/sidebar_education"
+            android:icon="@drawable/ic_education"
+            android:title="Education"/>
+        <item android:id="@+id/sidebar_leisure"
+            android:icon="@drawable/ic_leisure"
+            android:title="Leisure"/>
+        <item android:id="@+id/sidebar_property"
+            android:icon="@drawable/ic_house"
+            android:title="Property"/>
+        <item android:id="@+id/sidebar_marletplace"
+            android:icon="@drawable/ic_marketplace"
+            android:title="Marketplace"/>
+        <item android:id="@+id/sidebar_aboutus"
+            android:icon="@drawable/ic_aboutus"
+            android:title="About us"/>
+        <item android:id="@+id/sidebar_contactus"
+            android:icon="@drawable/ic_contactus"
+            android:title="Contact us"/>
+        <item android:id="@+id/sidebar_policies"
+            android:icon="@drawable/ic_policies"
+            android:title="Primary policies"/>
+        <item android:id="@+id/sidebar_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="FAQs"/>
+        <item android:id="@+id/sidebar_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"/>
+
+    </group>
+
+</menu>

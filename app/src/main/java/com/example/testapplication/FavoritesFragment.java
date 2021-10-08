@@ -74,7 +74,7 @@ public class FavoritesFragment extends Fragment {
 
     private void initRecyclerView(){
         RecyclerView recyclerView = getView().findViewById(R.id.recycler_view_fav);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(favTitlesArr, favPricesArr, favDownPaymentsArr, favBestLeaseRentalsArr, favDatesArr, favImagesArr, getContext());
+        FavRecyclerViewAdapter adapter = new FavRecyclerViewAdapter(favTitlesArr, favPricesArr, favDownPaymentsArr, favBestLeaseRentalsArr, favDatesArr, favImagesArr, getContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }

@@ -5,12 +5,50 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
+    <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_nav"
-        />
+        android:id="@+id/drawer_layout_sidebar"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar_sidebar"
+                android:background="@color/home_color"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:elevation="4dp"/>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottom_nav"
+                />
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:id="@+id/sidebar_view"
+            app:headerLayout="@layout/sidebar_header"
+            app:menu="@menu/sidebar_items"/>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -20,5 +58,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         app:menu="@menu/bottom_navigation" />
+
+
 
 </RelativeLayout>

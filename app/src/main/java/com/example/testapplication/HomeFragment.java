@@ -46,14 +46,18 @@ public class HomeFragment extends Fragment {
         this.adImagesArr.add("https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/vdat/submodels/hyundai_kona_hyundai-kona_2019-1544050623924.jpg?fill=18:11&resize=480:*");
         this.adImagesArr.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgmaQMEbJaJTyJ_z9Lrtwu8zr88FBj9kSM9sTSPiBWHOOoJvO-A7iA9C7MYQXxCopam0&usqp=CAU");
         this.adImagesArr.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgmaQMEbJaJTyJ_z9Lrtwu8zr88FBj9kSM9sTSPiBWHOOoJvO-A7iA9C7MYQXxCopam0&usqp=CAU");
+        this.adImagesArr.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgmaQMEbJaJTyJ_z9Lrtwu8zr88FBj9kSM9sTSPiBWHOOoJvO-A7iA9C7MYQXxCopam0&usqp=CAU");
 
         this.adTitlesArr.add("Vehicle-01");
         this.adTitlesArr.add("Vehicle-02");
         this.adTitlesArr.add("Vehicle-03");
         this.adTitlesArr.add("Vehicle-03");
+        this.adTitlesArr.add("Vehicle-03");
+
 
         this.adPricesArr.add("LKR 150,000");
         this.adPricesArr.add("LKR 160,000");
+        this.adPricesArr.add("LKR 170,000");
         this.adPricesArr.add("LKR 170,000");
         this.adPricesArr.add("LKR 170,000");
 
@@ -61,14 +65,17 @@ public class HomeFragment extends Fragment {
         this.adDownPaymentsArr.add("LKR 90,500");
         this.adDownPaymentsArr.add("LKR 100,500");
         this.adDownPaymentsArr.add("LKR 100,500");
+        this.adDownPaymentsArr.add("LKR 100,500");
 
         this.adBestLeaseRentalsArr.add("LKR 60,500");
         this.adBestLeaseRentalsArr.add("LKR 70,500");
         this.adBestLeaseRentalsArr.add("LKR 50,500");
         this.adBestLeaseRentalsArr.add("LKR 50,500");
+        this.adBestLeaseRentalsArr.add("LKR 50,500");
 
         this.adDatesArr.add("Kalutara | 2021-09-11 | 16.23.06");
         this.adDatesArr.add("Maradana | 2021-09-11 | 16.23.06");
+        this.adDatesArr.add("Borella | 2021-09-11 | 16.23.06");
         this.adDatesArr.add("Borella | 2021-09-11 | 16.23.06");
         this.adDatesArr.add("Borella | 2021-09-11 | 16.23.06");
 

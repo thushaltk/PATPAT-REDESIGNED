@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="138dp"
-        android:layout_height="185dp"
+        android:layout_width="165dp"
+        android:layout_height="209dp"
         android:layout_marginBottom="7dp"
         android:elevation="2dp"
         android:src="@drawable/avatar01"
@@ -22,8 +22,8 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="393dp"
-        android:layout_height="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
         android:background="@drawable/white_rounded_rectangle"
         android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,8 +97,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_password"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
 
     <Button
         android:id="@+id/login7"
@@ -112,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login3"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <EditText
         android:id="@+id/edit_email"

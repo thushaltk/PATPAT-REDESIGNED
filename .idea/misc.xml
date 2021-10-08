@@ -11,24 +11,31 @@
         <entry key="app/src/main/res/drawable/home_circular_button.xml" value="0.23170731707317074" />
         <entry key="app/src/main/res/drawable/home_curved_rectangle_button.xml" value="0.23170731707317074" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.23170731707317074" />
+        <entry key="app/src/main/res/drawable/ic_baseline_museum_24.xml" value="0.26524112829845314" />
+        <entry key="app/src/main/res/drawable/ic_education.xml" value="0.26524112829845314" />
+        <entry key="app/src/main/res/drawable/ic_vehicle.xml" value="0.26524112829845314" />
         <entry key="app/src/main/res/drawable/rounded_curve.xml" value="0.2935185185185185" />
         <entry key="app/src/main/res/drawable/search_background.xml" value="0.24700854700854702" />
         <entry key="app/src/main/res/drawable/splash_screenbackground.xml" value="0.2935185185185185" />
         <entry key="app/src/main/res/drawable/white_rounded_rectangle.xml" value="0.2935185185185185" />
         <entry key="app/src/main/res/font/rubik.xml" value="0.261965811965812" />
         <entry key="app/src/main/res/layout-v21/activity_main.xml" value="0.1408514492753623" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_side_bar.xml" value="0.2518518518518518" />
         <entry key="app/src/main/res/layout/advertisement_item.xml" value="0.375" />
         <entry key="app/src/main/res/layout/dropdown_item.xml" value="0.625" />
-        <entry key="app/src/main/res/layout/favorite_item.xml" value="0.45" />
-        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_create_an_account.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/favorite_item.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_create_an_account.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.125" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_quicklease.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_post_advertisement.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_quicklease.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/sidebar_header.xml" value="0.2518518518518518" />
         <entry key="app/src/main/res/layout/success_popup.xml" value="0.24749772520473157" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.2188034188034188" />
         <entry key="app/src/main/res/menu/main.xml" value="0.2287636669470143" />
+        <entry key="app/src/main/res/menu/sidebar_items.xml" value="0.2518518518518518" />
       </map>
     </option>
   </component>

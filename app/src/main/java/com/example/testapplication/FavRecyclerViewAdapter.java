@@ -80,8 +80,6 @@ public class FavRecyclerViewAdapter extends RecyclerView.Adapter<FavRecyclerView
         TextView favBestLeaseRentalText;
         TextView favDate;
         ImageView favImage;
-        //ImageView deleteBin;
-        //ImageView bookmark;
 
         public FavViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -95,8 +93,6 @@ public class FavRecyclerViewAdapter extends RecyclerView.Adapter<FavRecyclerView
             favBestLeaseRentalText = itemView.findViewById(R.id.fav_best_lease_rental_text);
             favDate = itemView.findViewById(R.id.fav_date);
             favImage = itemView.findViewById(R.id.imageView_fav_image);
-            //deleteBin = itemView.findViewById(R.id.delete_bin);
-            //bookmark = itemView.findViewById(R.id.bookmark);
         }
     }
 }

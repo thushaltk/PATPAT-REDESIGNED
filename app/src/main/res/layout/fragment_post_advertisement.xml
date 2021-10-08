@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostAdvertisementFragment"
+    android:background="@color/home_color">
+
+    <View
+        android:id="@+id/view_postAd"
+        android:layout_width="256dp"
+        android:layout_height="634dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/rounded_curve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/postAd_topic"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/rubik_medium"
+        android:lines="2"
+        android:text="POST YOUR
+        ADVERTISEMENT"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/view2_postAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <View
+        android:id="@+id/view2_postAd"
+        android:layout_width="match_parent"
+        android:layout_height="536dp"
+        android:background="@drawable/white_rounded_rectangle"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/postAd_topic2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="2dp"
+        android:gravity="center_horizontal|top"
+        android:text="Select your category"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2_postAd"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="108dp"
+        android:layout_height="109dp"
+        android:background="@color/transparent"
+        android:elevation="5dp"
+        android:src="@drawable/postadmarketplace"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_postAd_marketplace"
+        app:layout_constraintEnd_toEndOf="@+id/btn_postAd_marketplace"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@+id/btn_postAd_marketplace"
+        app:layout_constraintTop_toTopOf="@+id/btn_postAd_marketplace"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_postAd_vehicle"
+        android:layout_width="120dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/view2_postAd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2_postAd"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:background="@color/transparent"
+        android:elevation="5dp"
+        android:src="@drawable/postadvehicle"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_postAd_vehicle"
+        app:layout_constraintEnd_toEndOf="@+id/btn_postAd_vehicle"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/btn_postAd_vehicle"
+        app:layout_constraintTop_toTopOf="@+id/btn_postAd_vehicle"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <Button
+        android:id="@+id/btn_postAd_property"
+        android:layout_width="120dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/view2_postAd"
+        app:layout_constraintStart_toEndOf="@+id/btn_postAd_vehicle"
+        app:layout_constraintTop_toTopOf="@+id/view2_postAd"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:background="@color/transparent"
+        android:elevation="5dp"
+        android:src="@drawable/postadproperty"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_postAd_property"
+        app:layout_constraintEnd_toEndOf="@+id/btn_postAd_property"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/btn_postAd_property"
+        app:layout_constraintTop_toTopOf="@+id/btn_postAd_property"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <Button
+        android:id="@+id/btn_postAd_marketplace"
+        android:layout_width="120dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="136dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/view2_postAd"
+        app:layout_constraintStart_toEndOf="@+id/btn_postAd_vehicle"
+        app:layout_constraintTop_toTopOf="@+id/view2_postAd"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="108dp"
+        android:layout_height="109dp"
+        android:background="@color/transparent"
+        android:elevation="5dp"
+        android:src="@drawable/postadeducation"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_postAd_education"
+        app:layout_constraintEnd_toEndOf="@+id/btn_postAd_education"
+        app:layout_constraintStart_toStartOf="@+id/btn_postAd_education"
+        app:layout_constraintTop_toTopOf="@+id/btn_postAd_education" />
+
+    <Button
+        android:id="@+id/btn_postAd_leisure"
+        android:layout_width="120dp"
+        android:layout_height="119dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toEndOf="@+id/btn_postAd_education"
+        app:layout_constraintTop_toBottomOf="@+id/btn_postAd_property"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="108dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/transparent"
+        android:elevation="5dp"
+        android:src="@drawable/postadleisure"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_postAd_leisure"
+        app:layout_constraintEnd_toEndOf="@+id/btn_postAd_leisure"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_postAd_leisure"
+        app:layout_constraintTop_toTopOf="@+id/btn_postAd_leisure"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/btn_postAd_education"
+        android:layout_width="120dp"
+        android:layout_height="119dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/view2_postAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_postAd_property"
+        app:layout_constraintVertical_bias="0.193" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
