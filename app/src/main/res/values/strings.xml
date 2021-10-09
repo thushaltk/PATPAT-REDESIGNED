@@ -13,6 +13,7 @@
         <item>Mr.</item>
         <item>Mrs.</item>
         <item>Ms.</item>
+        <item>Rev.</item>
     </string-array>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
