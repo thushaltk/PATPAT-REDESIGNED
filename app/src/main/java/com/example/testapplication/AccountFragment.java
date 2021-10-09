@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import androidx.fragment.app.Fragment;
 public class AccountFragment extends Fragment {
 
     TextView signUp_tv;
+    Button login;
 
     @Nullable
     @Override
@@ -26,6 +28,7 @@ public class AccountFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         signUp_tv = (TextView) view.findViewById(R.id.signUp);
+        login = (Button) view.findViewById(R.id.login);
 
         signUp_tv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,5 +40,18 @@ public class AccountFragment extends Fragment {
                         .commit();
             }
         });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new AccountPageFragment();
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment_container, fragment)
+                        .commit();
+            }
+        });
+
+
     }
 }
