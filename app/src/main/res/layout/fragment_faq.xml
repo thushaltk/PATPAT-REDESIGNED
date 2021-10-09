@@ -66,7 +66,7 @@
         android:layout_marginTop="36dp"
         android:background="@drawable/edit_text_transparent"
         android:elevation="2dp"
-        android:hint="How do i post an advertisement?"
+        android:hint="@string/how_do_i_post_an_advertisement"
         android:inputType="none"
         android:focusable="false"
         android:paddingLeft="10dp"
