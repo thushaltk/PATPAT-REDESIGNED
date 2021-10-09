@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -64,10 +63,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MainActivity activity = (MainActivity) view.getContext();
-                Fragment fragment = new ViewAdvertisementFragment();
-                activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment)
-                        .commit();
+                Toast.makeText(context, adTitlesArr.get(position), Toast.LENGTH_SHORT).show();
             }
         });
 
