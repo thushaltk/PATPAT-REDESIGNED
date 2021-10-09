@@ -24,7 +24,7 @@
         android:layout_height="54dp"
         android:fontFamily="@font/rubik_medium"
         android:lines="2"
-        android:text="FAQ"
+        android:text="@string/faq"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/view2"
