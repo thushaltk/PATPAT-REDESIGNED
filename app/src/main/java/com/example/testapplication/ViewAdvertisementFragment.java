@@ -15,6 +15,7 @@ import android.widget.ImageView;
 public class ViewAdvertisementFragment extends Fragment {
 
     ImageView viewCustInquiry;
+    Button viewQuickLease;
 
     public ViewAdvertisementFragment() {
         // Required empty public constructor
@@ -31,11 +32,23 @@ public class ViewAdvertisementFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         viewCustInquiry = (ImageView) view.findViewById(R.id.imageView_cust);
+        viewQuickLease = (Button) view.findViewById(R.id.viewAd_quick_lease_btn);
 
         viewCustInquiry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                Fragment fragment = new CustomerInquiryFragment();
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment_container, fragment)
+                        .commit();
+            }
+        });
+
+        viewQuickLease.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new QuickLeaseFragment();
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, fragment)
