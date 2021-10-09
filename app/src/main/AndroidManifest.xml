@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApplication">
         <activity
+            android:name=".QuickLeaseSuccessPopup"
+            android:exported="true"
+            android:theme="@style/CustomTheme"/>
+        <activity
+            android:name=".CustomerInquirySuccessPopup"
+            android:exported="true"
+            android:theme="@style/CustomTheme"/>
+        <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/SplashTheme">
