@@ -22,16 +22,19 @@
         <entry key="app/src/main/res/layout-v21/activity_main.xml" value="0.1408514492753623" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_side_bar.xml" value="0.2518518518518518" />
-        <entry key="app/src/main/res/layout/advertisement_item.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/advertisement_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/dropdown_item.xml" value="0.625" />
         <entry key="app/src/main/res/layout/favorite_item.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="1.5" />
+        <entry key="app/src/main/res/layout/fragment_add_faq.xml" value="0.24749772520473157" />
         <entry key="app/src/main/res/layout/fragment_create_an_account.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_faq.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.125" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.10760869565217392" />
         <entry key="app/src/main/res/layout/fragment_post_advertisement.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_quicklease.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_view_advertisement.xml" value="0.25" />
         <entry key="app/src/main/res/layout/sidebar_header.xml" value="0.2518518518518518" />
         <entry key="app/src/main/res/layout/success_popup.xml" value="0.24749772520473157" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.2188034188034188" />
