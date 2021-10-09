@@ -12,11 +12,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class AccountPageFragment extends Fragment {
+public class EditProfileFragment extends Fragment {
 
-    Button editProfile;
+    Button changePwd;
 
-    public AccountPageFragment() {
+    public EditProfileFragment() {
         // Required empty public constructor
     }
 
@@ -25,18 +25,18 @@ public class AccountPageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account_page, container, false);
+        return inflater.inflate(R.layout.fragment_edit_profile, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        editProfile = (Button) view.findViewById(R.id.btn_icon_editmyprofile);
+        changePwd = (Button) view.findViewById(R.id.edit_changepwd);
 
-        editProfile.setOnClickListener(new View.OnClickListener() {
+        changePwd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new EditProfileFragment();
+                Fragment fragment = new ChangePasswordFragment();
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, fragment)
