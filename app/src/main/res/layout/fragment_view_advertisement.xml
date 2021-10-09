@@ -262,5 +262,41 @@
         app:layout_constraintTop_toBottomOf="@+id/viewAd_contact_seller_btn"
         app:layout_constraintVertical_bias="0.153" />
 
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/bookmark_outlined"
+        app:layout_constraintBottom_toTopOf="@+id/viewad_lease_rental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toEndOf="@+id/ad_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_right_arrow_viewAd"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/share_icon"
+        app:layout_constraintBottom_toTopOf="@+id/viewad_lease_rental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toEndOf="@+id/ad_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_right_arrow_viewAd"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cust_inquiry"
+        app:layout_constraintBottom_toTopOf="@+id/viewad_lease_rental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toEndOf="@+id/ad_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_right_arrow_viewAd"
+        app:layout_constraintVertical_bias="0.331" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
