@@ -9,31 +9,32 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.TextView;
 
-public class PostAdvertisementFragment extends Fragment {
+public class UploadCoverImageFragment extends Fragment {
 
-    ImageView vehiclePostBtn;
+    TextView uploadCover_next;
 
-    public PostAdvertisementFragment() {};
+    public UploadCoverImageFragment() {
         // Required empty public constructor
-
+    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_post_advertisement, container, false);
+        return inflater.inflate(R.layout.fragment_upload_cover_image, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        vehiclePostBtn = (ImageView) view.findViewById(R.id.postAd_vehicleBtn);
+        uploadCover_next = (TextView) view.findViewById(R.id.uploadCover_next);
 
-        vehiclePostBtn.setOnClickListener(new View.OnClickListener() {
+        uploadCover_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new UploadCoverImageFragment();
+                Fragment fragment = new UploadOtherImagesFragment();
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, fragment)
@@ -41,5 +42,4 @@ public class PostAdvertisementFragment extends Fragment {
             }
         });
     }
-
 }
